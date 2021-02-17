@@ -2,7 +2,7 @@ function check() {
   // 表示されているすべてのメモを取得している
   const posts = document.querySelectorAll(".post");
   posts.forEach(function (post) {
-     if (post.getAttribute("data-load") != null) {
+    if (post.getAttribute("data-load") != null) {
       return null;
     }
     post.setAttribute("data-load", "true");

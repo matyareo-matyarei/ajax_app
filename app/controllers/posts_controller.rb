@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all.order(id: "DESC")
+    @posts = Post.all.order(id: "DESC") #DESCで降順、ASCで昇順←デフォルト
   end
   def create
     post = Post.create(content: params[:content], checked: false)
